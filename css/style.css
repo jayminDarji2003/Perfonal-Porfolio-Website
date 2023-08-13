@@ -1,5 +1,4 @@
-
-        /*Google font URL */
+/*Google font URL */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Work+Sans:wght@400;500&display=swap');
 
@@ -14,6 +13,7 @@
 
 :root {
     --heading: rgb(0 10 45);
+    --white: #fff;
     --para: #777;
     --para-tint: #e4e4e4;
     --white: #fff;
@@ -22,6 +22,7 @@
     --helper-tint: #f3f4ff;
     --icons-bg: rgba(144, 172, 209, 0.2);
     --bg: rgb(249 249 255);
+    --bg-secondary: #e0e2eb;
     --gradient: linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%);
     --gradient-support: -webkit-linear-gradient(0deg,
             rgb(132 144 255) 0%,
@@ -82,11 +83,14 @@ li {
 .header {
     padding: 0 4.8rem;
     height: 9rem;
-    background-color: var(--bg);
+    background-color: var(--white);
     /* background: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .header .logo {
@@ -250,8 +254,10 @@ btn:active {
 }
 
 .hero-img {
-    max-width: 40%;
-    box-shadow: 2rem 2rem 0 0 var(--helper);
+    /* max-width: 40%;
+    box-shadow: 2rem 2rem 0 0 var(--helper); */
+    width: 50%;
+    box-shadow: 1rem 1rem 0 0 var(--helper);
 
 }
 
@@ -278,7 +284,7 @@ btn:active {
 .bio-img img {
     margin-top: 6rem;
     width: 60%;
-    box-shadow: -2rem -2rem 0 0 var(--helper);
+    box-shadow: -1rem -1rem 0 0 var(--helper);
     display: inline-block;
 }
 
@@ -314,15 +320,15 @@ btn:active {
 }
 
 .bio-progress-2::before {
-    width: 99%;
-}
-
-.bio-progress-3::before {
     width: 90%;
 }
 
-.bio-progress-4::before {
+.bio-progress-3::before {
     width: 80%;
+}
+
+.bio-progress-4::before {
+    width: 84%;
 }
 
 .bio-progress-5::before {
@@ -349,15 +355,15 @@ btn:active {
 }
 
 .bio-progress-2 span {
-    left: 95%;
-}
-
-.bio-progress-3 span {
     left: 86%;
 }
 
-.bio-progress-4 span {
+.bio-progress-3 span {
     left: 76%;
+}
+
+.bio-progress-4 span {
+    left: 80%;
 }
 
 .bio-progress-5 span {
@@ -385,17 +391,19 @@ btn:active {
     ============================================== */
 
 .section-portfolio {
-    background: var(--bg);
+    background: var(--bg-secondary);
     transition: all 0.7s linear;
 }
 
 .section-portfolio p {
     max-width: 60rem;
+    color: var(--heading);
 }
 
 .portfolio-images {
     gap: 3.2rem;
     margin-top: 6.4rem;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
 }
 
 .portfolio-images img {
@@ -408,6 +416,7 @@ btn:active {
 .img-overlay {
     position: relative;
     overflow: hidden;
+
 }
 
 .img-overlay .overlay {
@@ -741,7 +750,7 @@ ion-icon {
     }
 
     .section-hero img {
-        width: 70%;
+        width: 90%;
     }
 
 
@@ -758,7 +767,7 @@ ion-icon {
     }
 
     .section-biodata .bio-img img {
-        width: 50%;
+        width: 90%;
     }
 
 
@@ -769,35 +778,39 @@ ion-icon {
     }
 
     .img-overlay img {
-        width: 70%;
+        width: 100%;
     }
 
 
     .img-overlay {
-        margin-left: 12rem;
+        /* margin-left: 12rem; */
+        display: flex;
+        justify-content: center;
     }
 
     .section-biodata .bio-img {
         text-align: center;
     }
 
-     /* portfolio section */
+    /* portfolio section */
 
-     .img-overlay .overlay {
-        width: 70%;
+    .img-overlay .overlay {
+        width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .img-overlay .common-heading {
-        font-size: 4rem;
+        font-size: 8rem;
     }
+
     .common-heading::before {
         width: 1.5rem;
         height: 1.5rem;
     }
-    
+
     .common-heading::after {
         min-width: 7rem;
         height: 0.3rem;
@@ -829,8 +842,8 @@ ion-icon {
     .section-contact-main input[type="submit"] {
         max-width: 71%;
     }
- 
-   
+
+
 
     /* footer section */
     .section-footer .f-about,
@@ -855,32 +868,34 @@ ion-icon {
         padding: 4rem 0;
     }
 
-     /* portfolio section */
+    /* portfolio section */
 
-     .img-overlay .overlay {
-        width: 70%;
+    .img-overlay .overlay {
+        width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .img-overlay .common-heading {
-        font-size: 2rem;
+        font-size: 4rem;
     }
+
     .common-heading::before {
         width: 1.5rem;
         height: 1.5rem;
     }
-    
+
     .common-heading::after {
-        min-width: 7rem;
+        min-width: 14rem;
         height: 0.3rem;
     }
 
     .section-contact-main input[type="submit"] {
         max-width: 71%;
     }
- 
+
 }
 
 /* below 335px */
@@ -895,31 +910,53 @@ ion-icon {
         padding: 4rem 0;
     }
 
-     /* portfolio section */
+    /* portfolio section */
 
-     .img-overlay .overlay {
+    .img-overlay .overlay {
         width: 70%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .img-overlay .common-heading {
         font-size: 2rem;
     }
+
     .common-heading::before {
         width: 1.5rem;
         height: 1.5rem;
     }
-    
+
     .common-heading::after {
         min-width: 7rem;
         height: 0.3rem;
     }
+
     .section-contact-main input[type="submit"] {
         max-width: 90%;
     }
- 
 
-       
+    /* new added */
+    .bio-progress-bar span {
+        left: 80%;
+    }
+
+    .bio-progress-2 span {
+        left: 85%;
+    }
+
+    .bio-progress-3 span {
+        left: 75%;
+    }
+
+    .bio-progress-4 span {
+        left: 79%;
+    }
+
+    .bio-progress-5 span {
+        left: 65%;
+    }
+
 }
