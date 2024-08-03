@@ -27,8 +27,8 @@
     --gradient-support: -webkit-linear-gradient(0deg,
             rgb(132 144 255) 0%,
             rgb(98 189 252) 100%);
-    --shadow: 0px 0px 20px 0px rgb(132 144 255/20%);
-    --shadowsupport: 0px 20px 20px 0px #8490ff;
+    --shadow: 0px 0px 10px 0px rgb(132 144 255/20%);
+    --shadowsupport: 0px 10px 10px 0px #8490ff;
 
 }
 
@@ -166,7 +166,7 @@ li {
 
 .btn {
     background: var(--gradient-support);
-    padding: 1.6rem 3.2rem;
+    padding: 1rem 2.5rem;
     border: none;
     color: var(--helper-tint);
     display: inline-block;
@@ -329,14 +329,14 @@ btn:active {
 }
 
 .bio-progress-4::before {
-    width: 84%;
+    width: 60%;
 }
 
 .bio-progress-5::before {
     width: 70%;
 }
 
-.bio-progress-bar span {
+/* .bio-progress-bar span {
     position: absolute;
     top: 1.8rem;
     width: 4rem;
@@ -349,9 +349,9 @@ btn:active {
     border: none;
     outline: 0;
 
-}
+} */
 
-.bio-progress-bar span {
+/* .bio-progress-bar span {
     left: 81%;
 }
 
@@ -369,12 +369,12 @@ btn:active {
 
 .bio-progress-5 span {
     left: 66%;
-}
+} */
 
 
 /* to create a caret */
 
-.bio-progress-bar span::after {
+/* .bio-progress-bar span::after {
     content: "";
     position: absolute;
     width: 0;
@@ -383,7 +383,7 @@ btn:active {
     border-color: transparent;
     border-bottom-color: var(--helper);
     top: -1.6rem;
-}
+} */
 
 
 /* 
@@ -393,6 +393,7 @@ btn:active {
 
 .section-portfolio {
     background: var(--bg-secondary);
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
     transition: all 0.7s linear;
 }
 
@@ -409,10 +410,41 @@ btn:active {
 
 .portfolio-images img {
     width: 100%;
+    height: 100%;
     border-radius: 7px;
     position: relative;
     overflow: hidden;
 }
+
+
+.project-card {
+    border: 3px solid #8490ff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-heading {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.card-btn-container {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+
+/*
 
 .img-overlay {
     position: relative;
@@ -420,20 +452,9 @@ btn:active {
 
 }
 
-.img-overlay .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-support);
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(100%);
-    transition: all 0.3s linear;
-    border-radius: 7px;
+.img-overlay {
+    border: 3px solid orange;
+    padding: 10px;
 }
 
 .img-overlay:hover>.overlay {
@@ -447,6 +468,9 @@ btn:active {
     color: var(--white);
     text-decoration: none;
 }
+
+*/
+
 
 
 
