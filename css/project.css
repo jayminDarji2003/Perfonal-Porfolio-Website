@@ -20,7 +20,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 h1 {
@@ -71,17 +71,20 @@ button.go-home:hover,
 
 .image-container img {
     width: 100%;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 .project-info {
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: slideInRight 1s ease;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 .project-info h2,
@@ -105,8 +108,9 @@ button.go-home:hover,
     font-weight: bold;
     color: black;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 10px;
 }
 
 
@@ -118,6 +122,7 @@ button.go-home:hover,
 
 .technologies {
     margin-top: 20px;
+    text-align: center;
 }
 
 .tech-button {
@@ -129,6 +134,11 @@ button.go-home:hover,
 /* other  */
 .top-heading {
     font-size: 30px;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
 }
 
 
